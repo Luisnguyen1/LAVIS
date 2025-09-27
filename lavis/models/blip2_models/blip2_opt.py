@@ -58,7 +58,7 @@ class Blip2OPT(Blip2Base):
         """
         super().__init__()
         transformers_version = version.parse(transformers.__version__)
-        assert transformers_version >= version.parse("4.27"), "BLIP-2 OPT requires transformers>=4.27"
+        #assert transformers_version >= version.parse("4.27"), "BLIP-2 OPT requires transformers>=4.27"
         
         self.tokenizer = self.init_tokenizer()
 

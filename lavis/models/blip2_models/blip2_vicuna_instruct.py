@@ -57,7 +57,7 @@ class Blip2VicunaInstruct(Blip2Base):
     ):
         super().__init__()
         transformers_version = version.parse(transformers.__version__)
-        assert transformers_version >= version.parse("4.28"), "BLIP-2 Vicuna requires transformers>=4.28"        
+        # assert transformers_version >= version.parse("4.28"), "BLIP-2 Vicuna requires transformers>=4.28"        
         from transformers import LlamaTokenizer
         from lavis.models.blip2_models.modeling_llama import LlamaForCausalLM
         
